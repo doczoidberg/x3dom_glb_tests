@@ -1,0 +1,86 @@
+   <X3D showStat="false" showLog="false" x="0px" y="0px" width="1000px" height="800px" altImg="helloX3D-alt.png">
+          <Scene render="true" bboxCenter="0,0,0" bboxSize="-1,-1,-1" pickMode="idBuf" doPickPass="true">
+            <!-- <Viewpoint position="0 0 10" fieldOfView="0.785398" orientation="0,0,0,0" centerOfRotation="0,0,0" zNear="-1" zFar="-1" ></Viewpoint> -->
+             <!-- <Shape render="true" bboxCenter="0,0,0" bboxSize="-1,-1,-1" isPickable="true">
+                <Appearance sortType="auto" alphaClipThreshold="0.1">
+                    <Material diffuseColor="0.603 0.894 0.909" ambientIntensity="0.2" emissiveColor="0,0,0" shininess="0.2" specularColor="0,0,0"></Material>
+                </Appearance>
+                <Box DEF="box" solid="true" ccw="true" useGeoCache="true" lit="true" size="2,2,2"></Box>
+             </Shape> -->
+
+             <!-- <transform rotation="0 0 -0.0884856 0.996077" translation="1.43267 0.427722 -2.98023e-008" render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" center="0,0,0" scale="1,1,1" scaleorientation="0,0,0,0">
+	                        <externalshape id="exshape" url="assets\Box.glb" render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" ispickable="true" solid="true" ccw="true" usegeocache="true" lit="true"></externalshape>
+            </transform> -->
+                <shape render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" ispickable="true">
+		                        <appearance def="X3DOMMilkTruck" sorttype="auto" alphaclipthreshold="0.1">
+                                    <material diffusecolor="1 1 0" specularcolor="1.04 0.04 0.04" shininess="5" ambientintensity="0.2" emi2ssivecolor="1,0,0"></material>
+
+	                            </appearance>
+		                        <externalgeometry id="exshape" url="assets\BoxTextured.glb#Geometry-mesh002" solid="true" ccw="true" usegeocache="true" lit="true"></externalgeometry>
+                </shape>
+
+
+          </Scene>
+        </X3D>
+
+
+
+         <transform render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" center="0,0,0" translation="0,0,0" rotation="0,0,0,0" scale="1,1,1" scaleorientation="0,0,0,0">
+                    <navigationinfo headlight="true" type="EXAMINE ANY " typeparams="-0.4,60,0.05,2.8" explorationmode="all" avatarsize="0.25,1.6,0.75" walkdamping="2" speed="1" transitiontime="1" transitiontype="LINEAR "></navigationinfo>
+
+
+                    <viewpoint position="8.51103 5.79523 -9.84850" orientation="-0.06426 0.98558 0.15653 2.43642" znear="0.01000" zfar="1000.00000" description="" fieldofview="0.785398" centerofrotation="0,0,0"></viewpoint>
+
+
+                    <!-- EXTERNAL GEOMETRY (X3DOM MILKTRUCK) -->
+
+                	<transform translation="-1 0 -2" render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" center="0,0,0" rotation="0,0,0,0" scale="1,1,1" scaleorientation="0,0,0,0">
+	 					<!-- Front Wheels -->
+	                    <transform rotation="0 0 -0.0884856 0.996077" translation="1.43267 0.427722 -2.98023e-008" render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" center="0,0,0" scale="1,1,1" scaleorientation="0,0,0,0">
+	                        <shape render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" ispickable="true">
+		                        <appearance def="X3DOMMilkTruck" sorttype="auto" alphaclipthreshold="0.1">
+                                    <material diffusecolor="0 0 0" specularcolor="0.04 0.04 0.04" shininess="5" ambientintensity="0.2" emissivecolor="0,0,0"></material>
+		                        	<imagetexture url="X3DOMMilkTruck.png" repeats="true" repeatt="true" scale="true" hidechildren="true"></imagetexture>
+	                            </appearance>
+		                        <externalgeometry id="exshape" url="assets\CesiumMilkTruck.glb#Geometry-mesh001" solid="true" ccw="true" usegeocache="true" lit="true"></externalgeometry>
+	                        </shape>
+	                    </transform>
+
+	                    <!-- Rear Wheels -->
+	                    <transform rotation="0 0 -0.0884856 0.996077" translation="-1.35233 0.427722 -2.98023e-008" render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" center="0,0,0" scale="1,1,1" scaleorientation="0,0,0,0">
+	                        <shape render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" ispickable="true">
+		                        <appearance use="X3DOMMilkTruck"></appearance>
+		                        <externalgeometry id="exshape" url="assets\CesiumMilkTruck.glb#Geometry-mesh001" solid="true" ccw="true" usegeocache="true" lit="true"></externalgeometry>
+	                        </shape>
+	                    </transform>
+
+	                    <!-- Truck Body -->
+	                    <transform render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" center="0,0,0" translation="0,0,0" rotation="0,0,0,0" scale="1,1,1" scaleorientation="0,0,0,0">
+	                    	<shape render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" ispickable="true">
+		                        <appearance use="X3DOMMilkTruck"></appearance>
+		                        <externalgeometry id="exshape" url="assets\CesiumMilkTruck.glb#Geometry-mesh002" solid="true" ccw="true" usegeocache="true" lit="true"></externalgeometry>
+	                        </shape>
+	                    </transform>
+					</transform>
+
+
+					<!-- EXTERNAL SHAPE (CESIUM MILKTRUCK) -->
+
+					<transform translation="1 0 2" render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" center="0,0,0" rotation="0,0,0,0" scale="1,1,1" scaleorientation="0,0,0,0">
+						<!-- Front Wheels -->
+	                    <transform rotation="0 0 -0.0884856 0.996077" translation="1.43267 0.427722 -2.98023e-008" render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" center="0,0,0" scale="1,1,1" scaleorientation="0,0,0,0">
+	                        <externalshape id="exshape" url="assets\CesiumMilkTruck.glb#Geometry-mesh001" render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" ispickable="true" solid="true" ccw="true" usegeocache="true" lit="true"></externalshape>
+	                    </transform>
+
+	                    <!-- Rear Wheels -->
+	                    <transform rotation="0 0 -0.0884856 0.996077" translation="-1.35233 0.427722 -2.98023e-008" render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" center="0,0,0" scale="1,1,1" scaleorientation="0,0,0,0">
+	                        <externalshape id="exshape" url="assets\CesiumMilkTruck.glb#Geometry-mesh001" render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" ispickable="true" solid="true" ccw="true" usegeocache="true" lit="true"></externalshape>
+	                    </transform>
+
+	                    <!-- Truck Body -->
+	                    <transform render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" center="0,0,0" translation="0,0,0" rotation="0,0,0,0" scale="1,1,1" scaleorientation="0,0,0,0">
+	                        <externalshape id="exshape" url="assets\CesiumMilkTruck.glb#Geometry-mesh002" render="true" bboxcenter="0,0,0" bboxsize="-1,-1,-1" ispickable="true" solid="true" ccw="true" usegeocache="true" lit="true"></externalshape>
+	                    </transform>
+                    </transform>
+
+                </transform>
